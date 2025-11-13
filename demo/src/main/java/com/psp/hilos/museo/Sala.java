@@ -8,11 +8,11 @@ public class Sala {
         this.aforo = 100;
     }
 
-    public void incrementar() {
+    synchronized void incrementar() {
         this.aforo++;
     }
 
-    public void decrementar() {
+    synchronized void decrementar() {
         this.aforo--;
     }
 }
